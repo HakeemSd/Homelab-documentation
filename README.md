@@ -42,6 +42,7 @@ The purpose of this homelab is to gain practical experience with:
 - Docker Compose
 - Portainer
 - Jellyfin
+- Tailscale
 
 ## Planned
 
@@ -50,7 +51,6 @@ The purpose of this homelab is to gain practical experience with:
 - Prowlarr
 - qBittorrent
 - Homepage Dashboard
-- Tailscale
 - Grafana
 - Prometheus
 - Watchtower
@@ -110,7 +110,7 @@ homelab/
 - [x] Install Docker Compose
 - [x] Deploy Jellyfin Media Server
 - [ ] Configure Portainer
-- [ ] Configure Tailscale for secure remote access
+- [x] Configure Tailscale for secure remote access
 - [ ] Set up automated backups
 
 
@@ -139,7 +139,7 @@ homelab/
 - [ ] Configure qBittorrent
 
 ### Phase 5: Remote Access 
-- [ ] Configure Tailscale
+- [x] Configure Tailscale
 - [ ] Enable secure remote streaming
 - [ ] Configure reverse proxy (optional)
 
