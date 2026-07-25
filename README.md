@@ -1,2 +1,175 @@
 # Homelab
 Self-hosted Ubuntu homelab, that includes Docker, Jellyfin , and system administration projects, networking, and automation.
+
+
+# About
+
+The purpose of this homelab is to gain practical experience with:
+
+- Linux Administration
+- Docker & Docker Compose
+- Networking 
+- Self-Hosting Applications
+- Bash Scripting
+- System Automation
+- Remote Server Management
+- Monitoring & Logging
+- Media Streaming
+
+  # Hardware
+
+| Component | Details |
+|-----------|---------|
+| Mini PC | Qotom Fanless Mini PC |
+| CPU | Intel Celeron J1900 (Quad-Core, 2.0 GHz, up to 2.42 GHz) |
+| RAM | 8 GB DDR3L |
+| Storage | 128 GB SSD |
+| Network | 4× Gigabit Ethernet |
+| Cooling | Fanless Aluminum Chassis |
+| Operating System | Ubuntu Desktop 24.04 LTS |
+
+
+# Services
+
+## Installed
+
+- Ubuntu Desktop 24.04 LTS
+- OpenSSH Server
+- NoMachine
+- Cockpit
+
+## Planned
+
+- Docker
+- Docker Compose
+- Portainer
+- Jellyfin
+- Sonarr
+- Radarr
+- Prowlarr
+- qBittorrent
+- Homepage Dashboard
+- Tailscale
+- Grafana
+- Prometheus
+- Watchtower
+- Nginx Proxy Manager
+
+# Repository Structure
+
+homelab/
+│
+├── docs/
+│   ├── ubuntu-install.md
+│   ├── ssh-setup.md
+│   ├── docker.md
+│   ├── jellyfin.md
+│   ├── networking.md
+│   ├── cockpit.md
+│   └── troubleshooting.md
+│
+├── docker/
+│   ├── jellyfin/
+│   ├── portainer/
+│   ├── homepage/
+│   └── docker-compose.yml
+│
+├── scripts/
+│   ├── backup.sh
+│   ├── update.sh
+│   ├── cleanup.sh
+│   └── health-check.sh
+│
+├── diagrams/
+│
+├── screenshots/
+│
+└── README.md
+
+
+# Goals
+
+- Build a complete self-hosted media server
+- Learn Linux system administration
+- Gain hands-on Docker experience
+- Improve networking knowledge 
+- Learn automation with Bash
+- Monitor server performance
+- Build a professional GitHub portfolio
+- Document every step for future reference
+
+# Current Progress
+
+- [x] Installed Ubuntu Desktop 24.04 LTS
+- [x] Configured SSH for remote administration
+- [x] Installed and configured NoMachine
+- [x] Configured headless remote desktop access
+- [x] Installed Cockpit for web-based server management
+- [ ] Install Docker
+- [ ] Install Docker Compose
+- [ ] Deploy Jellyfin Media Server
+- [ ] Configure Portainer
+- [ ] Configure Tailscale for secure remote access
+- [ ] Set up automated backups
+
+
+# Project Milestones
+
+### Phase 1: Server Setup 
+- [x] Install Ubuntu Desktop 24.04 LTS
+- [x] Configure SSH
+- [x] Configure headless remote access
+- [x] Install Cockpit
+
+### Phase 2: Containerization 
+- [ ] Install Docker
+- [ ] Install Docker Compose
+- [ ] Install Portainer
+
+### Phase 3: Media Server 
+- [ ] Install Jellyfin
+- [ ] Configure media libraries
+- [ ] Enable hardware acceleration (if supported)
+
+### Phase 4: Media Automation 
+- [ ] Install Sonarr
+- [ ] Install Radarr
+- [ ] Install Prowlarr
+- [ ] Configure qBittorrent
+
+### Phase 5: Remote Access 
+- [ ] Configure Tailscale
+- [ ] Enable secure remote streaming
+- [ ] Configure reverse proxy (optional)
+
+### Phase 6: Monitoring 
+- [ ] Install Grafana
+- [ ] Install Prometheus
+- [ ] Configure automated backups
+
+
+
+# Future Projects
+
+- Docker Compose Lab
+- Jellyfin Media Server
+- Automated Backups
+- Reverse Proxy
+- Monitoring Dashboard
+- Home Network Documentation
+- Bash Automation Scripts
+- Infrastructure as Code
+- Docker Container Management
+- Secure Remote Access
+
+ # Screenshots
+
+Screenshots of the homelab setup, dashboards, services, and network diagrams will be added as the project grows.
+
+# License
+
+This project is licensed under the MIT License.
+
+# Author
+
+**Abdalhakeem Saeed**
