@@ -44,10 +44,10 @@ The purpose of this homelab is to gain practical experience with:
 - Tailscale
 - Homepage Dashboard
 - Sonarr
+- Radarr
 
 ## Planned
 
-- Radarr
 - Prowlarr
 - qBittorrent
 - Grafana
@@ -133,7 +133,7 @@ homelab/
 
 ### Phase 4: Media Automation 
 - [x] Install Sonarr
-- [ ] Install Radarr
+- [x] Install Radarr
 - [ ] Install Prowlarr
 - [ ] Configure qBittorrent
 
