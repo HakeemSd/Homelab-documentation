@@ -45,10 +45,10 @@ The purpose of this homelab is to gain practical experience with:
 - Homepage Dashboard
 - Sonarr
 - Radarr
+- Prowlarr
 
 ## Planned
 
-- Prowlarr
 - qBittorrent
 - Grafana
 - Prometheus
@@ -134,7 +134,7 @@ homelab/
 ### Phase 4: Media Automation 
 - [x] Install Sonarr
 - [x] Install Radarr
-- [ ] Install Prowlarr
+- [x] Install Prowlarr
 - [ ] Configure qBittorrent
 
 ### Phase 5: Remote Access 
