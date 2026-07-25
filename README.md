@@ -41,10 +41,10 @@ The purpose of this homelab is to gain practical experience with:
 - Docker
 - Docker Compose
 - Portainer
+- Jellyfin
 
 ## Planned
 
-- Jellyfin
 - Sonarr
 - Radarr
 - Prowlarr
@@ -108,7 +108,7 @@ homelab/
 - [x] Installed Cockpit for web-based server management
 - [x] Install Docker
 - [x] Install Docker Compose
-- [ ] Deploy Jellyfin Media Server
+- [x] Deploy Jellyfin Media Server
 - [ ] Configure Portainer
 - [ ] Configure Tailscale for secure remote access
 - [ ] Set up automated backups
@@ -128,7 +128,7 @@ homelab/
 - [x] Install Portainer
 
 ### Phase 3: Media Server 
-- [ ] Install Jellyfin
+- [x] Install Jellyfin
 - [ ] Configure media libraries
 - [ ] Enable hardware acceleration (if supported)
 
@@ -167,11 +167,6 @@ homelab/
 
 Screenshots of the homelab setup, dashboards, services, and network diagrams will be added as the project grows.
 
-
-
-# License
-
-This project is licensed under the MIT License.
 
 # Author
 

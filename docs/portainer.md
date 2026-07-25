@@ -70,6 +70,11 @@ Create the administrator account and connect the local Docker environment.
 
 ---
 
+## Screenshot
+
+![Portainer Dashboard](../screenshots/portainer-dashboard.png)
+
+
 ## Future Improvements
 
 - Deploy additional services using Docker Compose
