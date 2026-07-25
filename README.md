@@ -70,16 +70,16 @@ This repository documents every service I deploy, the Docker Compose files used 
 
 | Service | Status | Documentation |
 |---------|:------:|--------------|
-| Ubuntu Desktop | [x] | Built-in |
-| Docker | [x] | Included |
-| Docker Compose | [x] | Included |
-| Portainer | [x] | docs/portainer.md |
-| Jellyfin | [x] | docs/jellyfin.md |
-| Tailscale | [x] | docs/tailscale.md |
-| Homepage | [x] | docs/homepage.md |
-| Sonarr | [x] | docs/sonarr.md |
-| Radarr | [x] | docs/radarr.md |
-| Prowlarr | [x] | docs/prowlarr.md |
+| Ubuntu Desktop | ✅ | Built-in |
+| Docker | ✅ | Included |
+| Docker Compose | ✅ | Included |
+| Portainer | ✅ | docs/portainer.md |
+| Jellyfin | ✅ | docs/jellyfin.md |
+| Tailscale | ✅ | docs/tailscale.md |
+| Homepage | ✅ | docs/homepage.md |
+| Sonarr | ✅ | docs/sonarr.md |
+| Radarr | ✅ | docs/radarr.md |
+| Prowlarr | ✅ | docs/prowlarr.md |
 
 ---
 
@@ -221,7 +221,7 @@ Homelab-documentation/
 
 # Current Roadmap
 
-## [x] Phase 1 - Core Infrastructure
+## ✅ Section 1 - Core Infrastructure
 
 - [x] Ubuntu Desktop
 - [x] SSH
@@ -238,7 +238,7 @@ Homelab-documentation/
 
 ---
 
-## 🚀 Phase 2 - Infrastructure
+## Section 2 - Infrastructure
 
 - [ ] Uptime Kuma
 - [ ] Watchtower
@@ -248,7 +248,7 @@ Homelab-documentation/
 
 ---
 
-## 🎬 Phase 3 - Media Stack
+## Section 3 - Media Stack
 
 - [ ] Bazarr
 - [ ] Configure Sonarr
