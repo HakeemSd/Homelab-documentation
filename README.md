@@ -28,7 +28,7 @@ This homelab documents the design, deployment, and maintenance of a self-hosted 
 
 ---
 
-## 🚀 Project Highlights
+##  Project Highlights
 
 - Built a complete self-hosted infrastructure from the ground up on Ubuntu 24.04.
 - Deployed and manage 10+ Docker services using Docker Compose.
@@ -39,7 +39,7 @@ This homelab documents the design, deployment, and maintenance of a self-hosted 
 
 ---
 
-## 🖥️ Hardware
+##  Hardware
 
 | Component | Specification |
 |---|---|
@@ -48,11 +48,11 @@ This homelab documents the design, deployment, and maintenance of a self-hosted 
 | Storage | 128 GB SSD |
 | OS | Ubuntu Desktop 24.04 LTS |
 
-## 🧰 Technologies Used
+##  Technologies Used
 
 Ubuntu • Linux • Docker • Docker Compose • Portainer • Homepage • Jellyfin • Sonarr • Radarr • Prowlarr • Grafana • Prometheus • Node Exporter • cAdvisor • Uptime Kuma • Nginx Proxy Manager • Tailscale • Git • GitHub • YAML
 
-## 🏗️ Architecture
+##  Architecture
 
 ```text
 Internet
@@ -76,7 +76,7 @@ Docker Engine
    └── Uptime Kuma
 ```
 
-## 🌐 Reverse Proxy
+##  Reverse Proxy
 
 Uses **Nginx Proxy Manager** with local domains:
 
@@ -91,7 +91,7 @@ Uses **Nginx Proxy Manager** with local domains:
 - uptime.home.arpa
 - npm.home.arpa
 
-## 📊 Monitoring Stack
+##  Monitoring Stack
 
 | Tool | Purpose |
 |---|---|
@@ -105,7 +105,7 @@ Uses **Nginx Proxy Manager** with local domains:
 
 Ubuntu • Docker • Docker Compose • Portainer • Homepage • Jellyfin • Sonarr • Radarr • Prowlarr • Tailscale • Grafana • Prometheus • Node Exporter • cAdvisor • Uptime Kuma • Nginx Proxy Manager
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```text
 docker/
@@ -114,7 +114,7 @@ screenshots/
 README.md
 ```
 
-## 💡 Skills Demonstrated
+##  Skills Demonstrated
 
 - Linux Administration
 - Docker & Docker Compose
@@ -127,40 +127,67 @@ README.md
 - Self-Hosting
 - Infrastructure Documentation
 
-## 🗺️ Roadmap
+##  Roadmap
 
 ✅ Section 1 – Core Infrastructure
  [x] Ubuntu 24.04 LTS
+ 
  [x] SSH
+ 
  [x] NoMachine
+ 
  [x] Docker
+ 
  [x] Docker Compose
+ 
  [x] Portainer
+ 
  [x] Homepage
+ 
  [x] Jellyfin
+ 
  [x] Tailscale
+ 
  [x] Sonarr
+ 
  [x] Radarr
+ 
  [x] Prowlarr
 
  ✅ Section 2 – Infrastructure & Monitoring
+ 
  [x] Uptime Kuma
+ 
  [x] Grafana
+ 
  [x] Prometheus
+ 
  [x] Node Exporter
+ 
  [x] cAdvisor
+ 
  [x] Nginx Proxy Manager
+ 
  [x] Reverse Proxy Configuration
+ 
  [ ] Watchtower
+ 
  [ ] Automatic Backups
 
  Section 3 – Media Stack
+ 
  [ ] Bazarr
+ 
  [ ] Configure Sonarr
+ 
  [ ] Configure Radarr
+ 
  [ ] Configure Prowlarr
+ 
  [ ] Add External Storage
+ 
  [ ] Hardware Acceleration
+ 
  [ ] Mobile Streaming
 
 ### Next
