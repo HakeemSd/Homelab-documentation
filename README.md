@@ -40,10 +40,10 @@ The purpose of this homelab is to gain practical experience with:
 - Cockpit
 - Docker
 - Docker Compose
+- Portainer
 
 ## Planned
 
-- Portainer
 - Jellyfin
 - Sonarr
 - Radarr
@@ -125,7 +125,7 @@ homelab/
 ### Phase 2: Containerization 
 - [x] Install Docker
 - [x] Install Docker Compose
-- [ ] Install Portainer
+- [x] Install Portainer
 
 ### Phase 3: Media Server 
 - [ ] Install Jellyfin
@@ -166,6 +166,8 @@ homelab/
  # Screenshots
 
 Screenshots of the homelab setup, dashboards, services, and network diagrams will be added as the project grows.
+
+
 
 # License
 
