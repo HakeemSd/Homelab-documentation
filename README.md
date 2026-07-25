@@ -1,172 +1,277 @@
-# Homelab
-Self-hosted Ubuntu homelab, that includes Docker, Jellyfin , and system administration projects, networking, and automation.
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?logo=ubuntu&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
+![Tailscale](https://img.shields.io/badge/Tailscale-242424?logo=tailscale&logoColor=white)
+![Jellyfin](https://img.shields.io/badge/Jellyfin-00A4DC?logo=jellyfin&logoColor=white)
+![Homepage](https://img.shields.io/badge/Homepage-3B82F6)
+![Portainer](https://img.shields.io/badge/Portainer-13BEF9)
+![Sonarr](https://img.shields.io/badge/Sonarr-35C5F0)
+![Radarr](https://img.shields.io/badge/Radarr-FFC230)
+![Prowlarr](https://img.shields.io/badge/Prowlarr-FF6A00)
 
+# 🏠 Homelab Documentation
 
-# About
+A self-hosted homelab built using a **Qotom Mini PC** running **Ubuntu**.
 
-The purpose of this homelab is to gain practical experience with:
+This repository documents every service I deploy, the Docker Compose files used to deploy them, screenshots, and what I learned while building and maintaining my own infrastructure.
 
-- Linux Administration
-- Docker & Docker Compose
-- Networking 
-- Self-Hosting Applications
-- Bash Scripting
-- System Automation
-- Remote Server Management
-- Monitoring & Logging
-- Media Streaming
+---
 
-  # Hardware
+# Hardware
 
-| Component | Details |
-|-----------|---------|
-| Mini PC | Qotom Fanless Mini PC |
-| CPU | Intel Celeron J1900 (Quad-Core, 2.0 GHz, up to 2.42 GHz) |
-| RAM | 8 GB DDR3L |
+| Component | Specification |
+|-----------|---------------|
+| Mini PC | Qotom Intel Celeron J1900 |
+| RAM | 8 GB DDR3 |
 | Storage | 128 GB SSD |
-| Network | 4× Gigabit Ethernet |
-| Cooling | Fanless Aluminum Chassis |
 | Operating System | Ubuntu Desktop 24.04 LTS |
 
+---
 
-# Services
+# Technologies Used
 
-## Installed
-
-- Ubuntu Desktop 24.04 LTS
-- OpenSSH Server
-- NoMachine
-- Cockpit
+- Ubuntu Linux
 - Docker
 - Docker Compose
 - Portainer
-- Jellyfin
 - Tailscale
-- Homepage Dashboard
+- Homepage
+- Jellyfin
 - Sonarr
 - Radarr
 - Prowlarr
+- Git
+- GitHub
+- YAML
 
-## Planned
+---
 
-- qBittorrent
-- Grafana
-- Prometheus
-- Watchtower
-- Nginx Proxy Manager
+# Homelab Architecture
+
+```text
+                    Internet
+                         │
+                  Tailscale VPN
+                         │
+                Qotom Mini PC
+                         │
+                     Docker
+                         │
+      ┌─────────┬──────────┬──────────┬──────────┐
+      │         │          │          │          │
+ Portainer  Homepage   Jellyfin   Sonarr   Radarr
+                                       │
+                                   Prowlarr
+```
+
+---
+
+# Installed Services
+
+| Service | Status | Documentation |
+|---------|:------:|--------------|
+| Ubuntu Desktop | [x] | Built-in |
+| Docker | [x] | Included |
+| Docker Compose | [x] | Included |
+| Portainer | [x] | docs/portainer.md |
+| Jellyfin | [x] | docs/jellyfin.md |
+| Tailscale | [x] | docs/tailscale.md |
+| Homepage | [x] | docs/homepage.md |
+| Sonarr | [x] | docs/sonarr.md |
+| Radarr | [x] | docs/radarr.md |
+| Prowlarr | [x] | docs/prowlarr.md |
+
+---
+
+# Docker Compose Files
+
+Each service has its own Docker Compose configuration stored in:
+
+```text
+docker/
+├── homepage/
+├── jellyfin/
+├── portainer/
+├── prowlarr/
+├── radarr/
+└── sonarr/
+```
+
+---
+
+# Documentation
+
+Each service includes:
+
+- Purpose
+- Installation
+- Docker Compose
+- Configuration
+- Authentication
+- Screenshots
+- What I Learned
+- Future Improvements
+
+Documentation is located in:
+
+```text
+docs/
+├── homepage.md
+├── jellyfin.md
+├── portainer.md
+├── prowlarr.md
+├── radarr.md
+├── sonarr.md
+└── tailscale.md
+```
+
+---
+
+# Screenshots
+
+## Homepage
+
+![Homepage](screenshots/homepage-dashboard.png)
+
+---
+
+## Portainer
+
+![Portainer](screenshots/portainer-dashboard.png)
+
+---
+
+## Jellyfin
+
+![Jellyfin](screenshots/jellyfin-dashboard.png)
+
+---
+
+## Sonarr
+
+![Sonarr](screenshots/sonarr-dashboard.png)
+
+---
+
+## Radarr
+
+![Radarr](screenshots/radarr-dashboard.png)
+
+---
+
+## Prowlarr
+
+![Prowlarr](screenshots/prowlarr-dashboard.png)
+
+---
+
+## Tailscale
+
+![Tailscale](screenshots/tailscale-dashboard.png)
+
+---
+
+# Skills Learned
+
+- Linux Administration
+- Docker
+- Docker Compose
+- Container Networking
+- YAML Configuration
+- Docker Volumes
+- Docker Bind Mounts
+- Self-Hosting
+- VPN Configuration
+- Remote Server Management
+- Git Version Control
+- GitHub Documentation
+- Service Documentation
+- Media Server Administration
+
+---
 
 # Repository Structure
 
-homelab/
-│
-├── docs/
-│   ├── ubuntu-install.md
-│   ├── ssh-setup.md
-│   ├── docker.md
-│   ├── jellyfin.md
-│   ├── networking.md
-│   ├── cockpit.md
-│   └── troubleshooting.md
+```text
+Homelab-documentation/
 │
 ├── docker/
+│   ├── homepage/
 │   ├── jellyfin/
 │   ├── portainer/
-│   ├── homepage/
-│   └── docker-compose.yml
+│   ├── prowlarr/
+│   ├── radarr/
+│   └── sonarr/
 │
-├── scripts/
-│   ├── backup.sh
-│   ├── update.sh
-│   ├── cleanup.sh
-│   └── health-check.sh
-│
-├── diagrams/
+├── docs/
+│   ├── homepage.md
+│   ├── jellyfin.md
+│   ├── portainer.md
+│   ├── prowlarr.md
+│   ├── radarr.md
+│   ├── sonarr.md
+│   └── tailscale.md
 │
 ├── screenshots/
 │
 └── README.md
+```
 
+---
 
-# Goals
+# Current Roadmap
 
-- Build a complete self-hosted media server
-- Learn Linux system administration
-- Gain hands-on Docker experience
-- Improve networking knowledge 
-- Learn automation with Bash
-- Monitor server performance
-- Build a professional GitHub portfolio
-- Document every step for future reference
+## [x] Phase 1 - Core Infrastructure
 
-# Current Progress
+- [x] Ubuntu Desktop
+- [x] SSH
+- [x] NoMachine
+- [x] Docker
+- [x] Docker Compose
+- [x] Portainer
+- [x] Jellyfin
+- [x] Tailscale
+- [x] Homepage
+- [x] Sonarr
+- [x] Radarr
+- [x] Prowlarr
 
-- [x] Installed Ubuntu Desktop 24.04 LTS
-- [x] Configured SSH for remote administration
-- [x] Installed and configured NoMachine
-- [x] Configured headless remote desktop access
-- [x] Installed Cockpit for web-based server management
-- [x] Install Docker
-- [x] Install Docker Compose
-- [x] Deploy Jellyfin Media Server
-- [x] Configure Portainer
-- [x] Configure Tailscale for secure remote access
-- [ ] Set up automated backups
+---
 
+## 🚀 Phase 2 - Infrastructure
 
-# Project Milestones
+- [ ] Uptime Kuma
+- [ ] Watchtower
+- [ ] Grafana
+- [ ] Prometheus
+- [ ] Automatic Backups
 
-### Phase 1: Server Setup 
-- [x] Install Ubuntu Desktop 24.04 LTS
-- [x] Configure SSH
-- [x] Configure headless remote access
-- [x] Install Cockpit
+---
 
-### Phase 2: Containerization 
-- [x] Install Docker
-- [x] Install Docker Compose
-- [x] Install Portainer
+## 🎬 Phase 3 - Media Stack
 
-### Phase 3: Media Server 
-- [x] Install Jellyfin
-- [x] Configure media libraries
-- [x] Enable hardware acceleration 
+- [ ] Bazarr
+- [ ] Configure Sonarr
+- [ ] Configure Radarr
+- [ ] Configure Prowlarr
+- [ ] Add External Storage
+- [ ] Hardware Acceleration
+- [ ] Mobile Streaming
 
-### Phase 4: Media Automation 
-- [x] Install Sonarr
-- [x] Install Radarr
-- [x] Install Prowlarr
-- [ ] Configure qBittorrent
+---
 
-### Phase 5: Remote Access 
-- [x] Configure Tailscale
-- [x] Enable secure remote streaming
-- [ ] Configure reverse proxy 
+# Future Goals
 
-### Phase 6: Monitoring 
-- [ ] Install Grafana
-- [ ] Install Prometheus
-- [ ] Configure automated backups
+- Add a 4 TB external hard drive
+- Expand the Jellyfin media library
+- Learn Docker networking
+- Learn reverse proxies
+- Learn monitoring and observability
+- Continue improving Linux administration skills
+- Expand into DevOps and cloud technologies
 
+---
 
+# About This Project
 
-# Future Projects
-
-- Docker Compose Lab
-- Jellyfin Media Server
-- Automated Backups
-- Reverse Proxy
-- Monitoring Dashboard
-- Home Network Documentation
-- Bash Automation Scripts
-- Infrastructure as Code
-- Docker Container Management
-- Secure Remote Access
-
- # Screenshots
-
-Screenshots of the homelab setup, dashboards, services, and network diagrams will be added as the project grows.
-
-
-# Author
-
-**Abdalhakeem Saeed**
+This homelab is an ongoing learning project focused on developing practical experience with Linux, Docker, networking, self-hosting, automation, and infrastructure management. Every service is documented to create a repeatable deployment process and to track my progress as I continue learning.
