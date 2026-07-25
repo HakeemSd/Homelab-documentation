@@ -43,10 +43,10 @@ The purpose of this homelab is to gain practical experience with:
 - Jellyfin
 - Tailscale
 - Homepage Dashboard
+- Sonarr
 
 ## Planned
 
-- Sonarr
 - Radarr
 - Prowlarr
 - qBittorrent
@@ -108,7 +108,7 @@ homelab/
 - [x] Install Docker
 - [x] Install Docker Compose
 - [x] Deploy Jellyfin Media Server
-- [ ] Configure Portainer
+- [x] Configure Portainer
 - [x] Configure Tailscale for secure remote access
 - [ ] Set up automated backups
 
@@ -128,19 +128,19 @@ homelab/
 
 ### Phase 3: Media Server 
 - [x] Install Jellyfin
-- [ ] Configure media libraries
-- [ ] Enable hardware acceleration (if supported)
+- [x] Configure media libraries
+- [x] Enable hardware acceleration 
 
 ### Phase 4: Media Automation 
-- [ ] Install Sonarr
+- [x] Install Sonarr
 - [ ] Install Radarr
 - [ ] Install Prowlarr
 - [ ] Configure qBittorrent
 
 ### Phase 5: Remote Access 
 - [x] Configure Tailscale
-- [ ] Enable secure remote streaming
-- [ ] Configure reverse proxy (optional)
+- [x] Enable secure remote streaming
+- [ ] Configure reverse proxy 
 
 ### Phase 6: Monitoring 
 - [ ] Install Grafana
