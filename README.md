@@ -15,7 +15,6 @@ The purpose of this homelab is to gain practical experience with:
 - Remote Server Management
 - Monitoring & Logging
 - Media Streaming
-- Git Bash
 
   # Hardware
 
@@ -43,6 +42,7 @@ The purpose of this homelab is to gain practical experience with:
 - Portainer
 - Jellyfin
 - Tailscale
+- Homepage Dashboard
 
 ## Planned
 
@@ -50,7 +50,6 @@ The purpose of this homelab is to gain practical experience with:
 - Radarr
 - Prowlarr
 - qBittorrent
-- Homepage Dashboard
 - Grafana
 - Prometheus
 - Watchtower
