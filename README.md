@@ -15,6 +15,7 @@ The purpose of this homelab is to gain practical experience with:
 - Remote Server Management
 - Monitoring & Logging
 - Media Streaming
+- Git Bash
 
   # Hardware
 
@@ -37,11 +38,11 @@ The purpose of this homelab is to gain practical experience with:
 - OpenSSH Server
 - NoMachine
 - Cockpit
+- Docker
+- Docker Compose
 
 ## Planned
 
-- Docker
-- Docker Compose
 - Portainer
 - Jellyfin
 - Sonarr
@@ -105,8 +106,8 @@ homelab/
 - [x] Installed and configured NoMachine
 - [x] Configured headless remote desktop access
 - [x] Installed Cockpit for web-based server management
-- [ ] Install Docker
-- [ ] Install Docker Compose
+- [x] Install Docker
+- [x] Install Docker Compose
 - [ ] Deploy Jellyfin Media Server
 - [ ] Configure Portainer
 - [ ] Configure Tailscale for secure remote access
@@ -122,8 +123,8 @@ homelab/
 - [x] Install Cockpit
 
 ### Phase 2: Containerization 
-- [ ] Install Docker
-- [ ] Install Docker Compose
+- [x] Install Docker
+- [x] Install Docker Compose
 - [ ] Install Portainer
 
 ### Phase 3: Media Server 
