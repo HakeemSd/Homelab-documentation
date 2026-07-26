@@ -1,11 +1,12 @@
 # Homelab Documentation
 
-![GitHub last commit](https://img.shields.io/github/last-commit/HakeemSd/Homelab-documentation?style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/HakeemSd/Homelab-documentation?style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/HakeemSd/Homelab-documentation?style=for-the-badge)
-![Docker](https://img.shields.io/badge/Docker-23+-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-![Status](https://img.shields.io/badge/Project-Active-success?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Jellyfin](https://img.shields.io/badge/Jellyfin-00A4DC?style=for-the-badge&logo=jellyfin&logoColor=white)
+![GitHub last commit](https://img.shields.io/github/last-commit/HakeemSd/Homelab-documentation?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
 ---
 
